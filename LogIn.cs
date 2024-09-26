@@ -30,6 +30,9 @@ namespace Battleship
             }
             else
             {
+                Menu f = new Menu();
+                f.Show();
+                f.Tag = "1";
                 Hide();
             }
 

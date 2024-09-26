@@ -92,6 +92,7 @@
             this.Controls.Add(this.buttonPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
+            this.Tag = "0";
             this.Text = "Menu";
             this.ResumeLayout(false);
 

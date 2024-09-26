@@ -12,7 +12,6 @@ namespace Battleship
 {
     public partial class Menu : Form
     {
-        bool isLoggedIn = false;
         public Menu()
         {
             InitializeComponent();
@@ -20,9 +19,10 @@ namespace Battleship
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            if (!isLoggedIn)
+            if (Tag as string == "0" )
             {
                 MessageBox.Show("Log in firstly!");
+                Hide();
                 Form logIn = new LogIn();
                 logIn.Show();
             }
@@ -30,13 +30,15 @@ namespace Battleship
 
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
+            Hide();
             Form logIn = new LogIn();
-            logIn.Show();
+            logIn.Show(); 
         }
 
         private void buttonRules_Click(object sender, EventArgs e)
         {
-
+            Form rules = new Rules();
+            rules.Show();
         }
 
         private void buttonStatistics_Click(object sender, EventArgs e)

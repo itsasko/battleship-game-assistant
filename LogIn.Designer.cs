@@ -118,6 +118,7 @@
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.textBoxPassword);
             this.Name = "LogIn";
+            this.Tag = "0";
             this.Text = "LogIn";
             this.Load += new System.EventHandler(this.LogIn_Load);
             this.ResumeLayout(false);
