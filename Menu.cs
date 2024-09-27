@@ -19,18 +19,18 @@ namespace Battleship
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            //if (Tag as string == "0" )
-            //{
-/*                MessageBox.Show("Log in firstly!");
+            if (Tag as string == "0" )
+            {
+                MessageBox.Show("Log in firstly!");
                 Hide();
                 Form logIn = new LogIn();
-                logIn.Show();*/
-            //}
-            //else
-            //{
+                logIn.Show();
+            }
+            else
+            {
                 Form player1 = new Player1();
                 player1.Show();
-            //}
+            }
         }
 
         private void buttonLogIn_Click(object sender, EventArgs e)
@@ -44,11 +44,6 @@ namespace Battleship
         {
             Form rules = new Rules();
             rules.Show();
-        }
-
-        private void buttonStatistics_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

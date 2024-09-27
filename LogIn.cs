@@ -24,7 +24,9 @@ namespace Battleship
                 if (textBoxUserName.Text != "user")
                 {
                     MessageBox.Show("The username does not exist. Do you want to sign in?");
-                    // should suggest to sign in, because the user with this username does not exist
+                    Form sign_up = new SignUp();
+                    sign_up.Show();
+                    Hide();
                 }
                 labelError.Visible = true;
             }

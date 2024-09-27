@@ -177,7 +177,7 @@ namespace Battleship
                         if (shipBuilding == 1)
                         {
                             isGameStarted = true;
-                            MessageBox.Show("Yee!");
+                            MessageBox.Show("Start the game");
                         }
                         
                     }
@@ -186,6 +186,24 @@ namespace Battleship
                 {
                     clickedButton.BackColor = Color.White;
                     sellCounter -= 1;
+                }
+            }
+            if (isGameStarted)
+            {
+                if (tabControlPlayer1.SelectedTab == tabPage1)
+                {
+                    if (isGameStarted)
+                    {
+                        Button clickedButton = sender as Button;
+                        if (clickedButton.BackColor == Color.White)
+                        {
+                            clickedButton.BackColor = Color.Red;
+                        }
+                        else
+                        {
+                            clickedButton.BackColor = Color.White;
+                        }
+                    }
                 }
             }
         }

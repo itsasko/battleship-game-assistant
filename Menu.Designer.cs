@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.buttonPlay = new System.Windows.Forms.Button();
             this.buttonLogIn = new System.Windows.Forms.Button();
-            this.buttonStatistics = new System.Windows.Forms.Button();
             this.buttonRules = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -58,17 +57,6 @@
             this.buttonLogIn.UseVisualStyleBackColor = false;
             this.buttonLogIn.Click += new System.EventHandler(this.buttonLogIn_Click);
             // 
-            // buttonStatistics
-            // 
-            this.buttonStatistics.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.buttonStatistics.Location = new System.Drawing.Point(265, 543);
-            this.buttonStatistics.Name = "buttonStatistics";
-            this.buttonStatistics.Size = new System.Drawing.Size(170, 50);
-            this.buttonStatistics.TabIndex = 2;
-            this.buttonStatistics.Text = "Statistics";
-            this.buttonStatistics.UseVisualStyleBackColor = false;
-            this.buttonStatistics.Click += new System.EventHandler(this.buttonStatistics_Click);
-            // 
             // buttonRules
             // 
             this.buttonRules.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -87,7 +75,6 @@
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(684, 661);
             this.Controls.Add(this.buttonRules);
-            this.Controls.Add(this.buttonStatistics);
             this.Controls.Add(this.buttonLogIn);
             this.Controls.Add(this.buttonPlay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -102,7 +89,6 @@
 
         private System.Windows.Forms.Button buttonPlay;
         private System.Windows.Forms.Button buttonLogIn;
-        private System.Windows.Forms.Button buttonStatistics;
         private System.Windows.Forms.Button buttonRules;
     }
 }
