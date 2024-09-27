@@ -26,6 +26,11 @@ namespace Battleship
                 Form logIn = new LogIn();
                 logIn.Show();
             }
+            else
+            {
+                Form player1 = new Player1();
+                player1.Show();
+            }
         }
 
         private void buttonLogIn_Click(object sender, EventArgs e)
