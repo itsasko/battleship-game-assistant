@@ -13,6 +13,7 @@ namespace Battleship
     public partial class Menu : Form
     {
         public string username = "user", password = "password";
+        int gamesPlayed = 0;
         public Menu()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace Battleship
             else
             {
                 Form player1 = new Player1();
+                gamesPlayed += 1;
                 player1.Show();
             }
         }
@@ -43,7 +45,7 @@ namespace Battleship
 
         private void buttonAccount_Click(object sender, EventArgs e)
         {
-            Form account = new Account(username, password);
+            Form account = new Account(username, password, gamesPlayed);
             account.Show();
         }
 

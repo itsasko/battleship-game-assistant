@@ -71,12 +71,13 @@
             // 
             // buttonAccount
             // 
+            this.buttonAccount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonAccount.Location = new System.Drawing.Point(265, 543);
             this.buttonAccount.Name = "buttonAccount";
             this.buttonAccount.Size = new System.Drawing.Size(170, 50);
             this.buttonAccount.TabIndex = 4;
             this.buttonAccount.Text = "Account";
-            this.buttonAccount.UseVisualStyleBackColor = true;
+            this.buttonAccount.UseVisualStyleBackColor = false;
             this.buttonAccount.Click += new System.EventHandler(this.buttonAccount_Click);
             // 
             // Menu
