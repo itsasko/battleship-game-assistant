@@ -71,6 +71,32 @@ namespace Battleship
         }
         private void PlayerButtonClick(object sender, EventArgs e)
         {
+            if (isGameStarted)
+            {
+                if (tabControlPlayer1.SelectedTab == tabPage1)
+                {
+                    if (isGameStarted)
+                    {
+                        Button clickedButton = sender as Button;
+                        if (clickedButton.BackColor == Color.Blue)
+                        {
+                            clickedButton.BackColor = Color.Red;
+                        }
+                        else if (clickedButton.BackColor == Color.Red)
+                        {
+                            clickedButton.BackColor = Color.Blue;
+                        }
+                        else if (clickedButton.BackColor == Color.White)
+                        {
+                            clickedButton.BackColor = Color.Pink;
+                        }
+                        else if (clickedButton.BackColor == Color.Pink)
+                        {
+                            clickedButton.BackColor = Color.White;
+                        }
+                    }
+                }
+            }
             if (!isGameStarted)
             {
                 Button clickedButton = sender as Button;
@@ -186,24 +212,6 @@ namespace Battleship
                 {
                     clickedButton.BackColor = Color.White;
                     sellCounter -= 1;
-                }
-            }
-            if (isGameStarted)
-            {
-                if (tabControlPlayer1.SelectedTab == tabPage1)
-                {
-                    if (isGameStarted)
-                    {
-                        Button clickedButton = sender as Button;
-                        if (clickedButton.BackColor == Color.White)
-                        {
-                            clickedButton.BackColor = Color.Red;
-                        }
-                        else
-                        {
-                            clickedButton.BackColor = Color.White;
-                        }
-                    }
                 }
             }
         }
