@@ -12,6 +12,7 @@ namespace Battleship
 {
     public partial class Menu : Form
     {
+        public string username = "user", password = "password";
         public Menu()
         {
             InitializeComponent();
@@ -38,6 +39,12 @@ namespace Battleship
             Hide();
             Form logIn = new LogIn();
             logIn.Show(); 
+        }
+
+        private void buttonAccount_Click(object sender, EventArgs e)
+        {
+            Form account = new Account(username, password);
+            account.Show();
         }
 
         private void buttonRules_Click(object sender, EventArgs e)

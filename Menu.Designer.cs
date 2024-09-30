@@ -32,6 +32,7 @@
             this.buttonPlay = new System.Windows.Forms.Button();
             this.buttonLogIn = new System.Windows.Forms.Button();
             this.buttonRules = new System.Windows.Forms.Button();
+            this.buttonAccount = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonPlay
@@ -68,12 +69,23 @@
             this.buttonRules.UseVisualStyleBackColor = false;
             this.buttonRules.Click += new System.EventHandler(this.buttonRules_Click);
             // 
+            // buttonAccount
+            // 
+            this.buttonAccount.Location = new System.Drawing.Point(265, 543);
+            this.buttonAccount.Name = "buttonAccount";
+            this.buttonAccount.Size = new System.Drawing.Size(170, 50);
+            this.buttonAccount.TabIndex = 4;
+            this.buttonAccount.Text = "Account";
+            this.buttonAccount.UseVisualStyleBackColor = true;
+            this.buttonAccount.Click += new System.EventHandler(this.buttonAccount_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.buttonAccount);
             this.Controls.Add(this.buttonRules);
             this.Controls.Add(this.buttonLogIn);
             this.Controls.Add(this.buttonPlay);
@@ -90,6 +102,7 @@
         private System.Windows.Forms.Button buttonPlay;
         private System.Windows.Forms.Button buttonLogIn;
         private System.Windows.Forms.Button buttonRules;
+        private System.Windows.Forms.Button buttonAccount;
     }
 }
 

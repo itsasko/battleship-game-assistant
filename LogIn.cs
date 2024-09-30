@@ -23,7 +23,7 @@ namespace Battleship
             {
                 if (textBoxUserName.Text != "user")
                 {
-                    MessageBox.Show("The username does not exist. Do you want to sign in?");
+                    MessageBox.Show("The username does not exist. Do you want to sign up?");
                     Form sign_up = new SignUp();
                     sign_up.Show();
                     Hide();
@@ -33,6 +33,8 @@ namespace Battleship
             else
             {
                 Menu f = new Menu();
+                f.username = "user";
+                f.password = "password";
                 f.Show();
                 f.Tag = "1";
                 Hide();
